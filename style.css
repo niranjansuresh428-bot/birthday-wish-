@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Dialog Box Styling */
+.dialog-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+}
+
+.dialog-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 90%;
+    width: 400px;
+}
+
+.dialog-box h1, .dialog-box h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2c2c2c;
+    margin-top: 0;
+}
+
+.dialog-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.long-message {
+    text-align: left;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+button {
+    background-color: #8a6a4a; /* A luxurious gold/brown color */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #6d543a;
+}
+
+/* Main Content Styling */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.sister-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.main-container h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    margin: 10px 0;
+    color: #2c2c2c;
+}
+
+.main-container .wishes {
+    font-size: 1.2em;
+    max-width: 500px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
