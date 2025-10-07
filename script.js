@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const openButton = document.getElementById('open-button');
     const readMoreButton = document.getElementById('read-more-button');
-     const birthdaySong = document.getElementById('birthday-song');
-
     const closeMessageButton = document.getElementById('close-message-button');
     
     const birthdaySong = document.getElementById('birthday-song');
