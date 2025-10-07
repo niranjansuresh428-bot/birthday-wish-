@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Surprise!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="initial-dialog" class="dialog-container">
+        <div class="dialog-box">
+            <h1>A Surprise is Waiting for You!</h1>
+            <p>Please open it.</p>
+            <button id="open-button">Open</button>
+        </div>
+    </div>
+
+    <div id="main-content" class="main-container hidden">
+        <img src="photo.jpg" alt="A photo of my lovely sister" class="sister-photo">
+        <h1>Happy Birthday, Dearest Sister!</h1>
+        <p class="wishes">Wishing you a day filled with love, laughter, and everything you wished for. You deserve the world!</p>
+        <button id="read-more-button">Read More</button>
+    </div>
+
+    <div id="long-message-dialog" class="dialog-container hidden">
+        <div class="dialog-box long-message">
+            <h2>My Message For You...</h2>
+            <p>
+                Here is where you can write a long, heartfelt message to your sister.
+                Talk about your favorite memories, what she means to you, and how much you
+                appreciate having her in your life. Don't be shy, pour your heart out!
+                This is your space to make her feel incredibly special on her big day.
+                Happy Birthday once again!
+            </p>
+            <button id="close-message-button">Close</button>
+        </div>
+    </div>
+    
+    <audio id="birthday-song" src="song.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
